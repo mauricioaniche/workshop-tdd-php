@@ -1,0 +1,17 @@
+{
+    "require": { 
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aniche\\TDD\\": [
+                "src/aniche",
+                "tests/aniche"
+            ],
+            "Aniche\\TDD\\Lousa\\": [
+                "src/aniche/lousa",
+                "tests/aniche/lousa"
+            ]
+        }
+    }
+}
