@@ -32,6 +32,10 @@
             "Aniche\\TDD\\TDD\\": [
                 "src/aniche/tdd",
                 "tests/aniche/tdd"
+            ],
+            "Aniche\\TDD\\Dao\\": [
+                "src/aniche/dao",
+                "tests/aniche/dao"
             ]
         }
     }
