@@ -8,34 +8,6 @@
             "Aniche\\TDD\\": [
                 "src/aniche",
                 "tests/aniche"
-            ],
-            "Aniche\\TDD\\Lousa\\": [
-                "src/aniche/lousa",
-                "tests/aniche/lousa"
-            ],
-            "Aniche\\TDD\\Desconto\\": [
-                "src/aniche/desconto",
-                "tests/aniche/desconto"
-            ],
-            "Aniche\\TDD\\Lista\\": [
-                "src/aniche/lista",
-                "tests/aniche/lista"
-            ],
-            "Aniche\\TDD\\Datas\\": [
-                "src/aniche/datas",
-                "tests/aniche/datas"
-            ],
-            "Aniche\\TDD\\Mocks\\": [
-                "src/aniche/mocks",
-                "tests/aniche/mocks"
-            ],
-            "Aniche\\TDD\\TDD\\": [
-                "src/aniche/tdd",
-                "tests/aniche/tdd"
-            ],
-            "Aniche\\TDD\\Dao\\": [
-                "src/aniche/dao",
-                "tests/aniche/dao"
             ]
         }
     }

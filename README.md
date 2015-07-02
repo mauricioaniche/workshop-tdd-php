@@ -14,6 +14,7 @@ brew install php56
 
 ```
 php composer.phar install
+php composer.phar update
 ```
 
 # Rodando os testes
