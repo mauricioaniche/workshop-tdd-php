@@ -1,6 +1,6 @@
 <?php
 
-namespace Aniche\TDD\Lousa;
+namespace Aniche\TDD\MaiorMenor;
 
 require "./vendor/autoload.php";
 
@@ -11,7 +11,7 @@ class MaiorMenor {
 	public function encontra($nums) {
 		foreach($nums as $n) {
 			if($n > $this->maior) $this->maior = $n;
-			else if($n < $this->menor) $this->menor = $n;
+			if($n < $this->menor) $this->menor = $n;
 		}
 	}
 
@@ -24,11 +24,13 @@ class MaiorMenor {
 	}
 }
 
+/*
 $mm = new MaiorMenor();
 $mm->encontra(array(4, 5, 6, 7));
 
 echo $mm->getMaior();
 echo " ";
 echo $mm->getMenor();
+*/
 
 ?>
