@@ -11,7 +11,7 @@ class AplicadorDeDescontos {
 
 	public function aplica($compra) {
 		$retorno = $this->descontoPorProduto($compra);
-		if(!retorno) $this->descontoPorValor($compra);
+		if(!$retorno) $this->descontoPorValor($compra);
 	}
 
 	private function descontoPorProduto($compra) {
