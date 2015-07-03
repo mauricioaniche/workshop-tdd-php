@@ -11,7 +11,7 @@ class MaiorMenor {
 	public function encontra($nums) {
 		foreach($nums as $n) {
 			if($n > $this->maior) $this->maior = $n;
-			if($n < $this->menor) $this->menor = $n;
+			else if($n < $this->menor) $this->menor = $n;
 		}
 	}
 
@@ -25,7 +25,7 @@ class MaiorMenor {
 }
 
 $mm = new MaiorMenor();
-$mm->encontra(array(1,2,3,4));
+$mm->encontra(array(4, 5, 6, 7));
 
 echo $mm->getMaior();
 echo " ";
