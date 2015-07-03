@@ -10,8 +10,8 @@ use Aniche\TDD\Desconto\Item;
 class AplicadorDeDescontos {
 
 	public function aplica($compra) {
-		$retorno = descontoPorProduto($compra);
-		if(!retorno) descontoPorValor($compra);
+		$retorno = $this->descontoPorProduto($compra);
+		if(!retorno) $this->descontoPorValor($compra);
 	}
 
 	private function descontoPorProduto($compra) {
