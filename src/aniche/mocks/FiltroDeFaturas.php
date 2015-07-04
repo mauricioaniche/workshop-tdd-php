@@ -22,7 +22,7 @@ class FiltroDeFaturas {
 		foreach($this->faturas->todas() as $fatura) {
 			if ($fatura->getValor() > 2000) $filtradas->append($fatura);
 			else if ($fatura->getValor() < 2000 && $fatura->getCliente() == "MICROSOFT") $filtradas->append($fatura);
-			else if (intval($fatura->getData()->format('y')) < 1999) $filtradas->append($fatura);
+			else if (intval($fatura->getData()->format('Y')) < 1999) $filtradas->append($fatura);
 		}
 		
 		return $filtradas;
