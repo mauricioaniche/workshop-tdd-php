@@ -21,8 +21,8 @@ class UsuarioDao {
             for($i = 0; $i < mysql_num_rows($res); $i++) {
                 $row = mysql_fetch_assoc($res);
                 
-                $u = new Usuario($row[nome], $row[email], $row[idade]);
-                $u->setId($row[id]);
+                $u = new Usuario($row['nome'], $row['email'], $row['idade']);
+                $u->setId($row['id']);
 				$result[$i] = $u;
             }
         }
@@ -42,7 +42,7 @@ class UsuarioDao {
             for($i = 0; $i < mysql_num_rows($res); $i++) {
                 $row = mysql_fetch_assoc($res);
                 
-                $u = new Usuario($row[nome], $row[email], $row[idade]);
+                $u = new Usuario($row['nome'], $row['email'], $row['idade']);
                 $u->setId($row[id]);
                 return $u;
             }
@@ -63,7 +63,7 @@ class UsuarioDao {
             for($i = 0; $i < mysql_num_rows($res); $i++) {
                 $row = mysql_fetch_assoc($res);
                 
-                $u = new Usuario($row[nome], $row[email], $row[idade]);
+                $u = new Usuario($row['nome'], $row['email'], $row['idade']);
                 $u->setId($row[id]);
                 return $u;
             }
